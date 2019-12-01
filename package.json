@@ -1,0 +1,17 @@
+{
+  "name": "problem-set-4_0",
+  "version": "1.0.0",
+  "description": "Understanding Objects problem sert",
+  "main": "exercises.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Reuben Ogbonna",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-plugin-import": "^2.18.2",
+    "jest": "^24.9.0"
+  }
+}
