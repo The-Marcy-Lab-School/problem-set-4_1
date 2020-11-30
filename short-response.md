@@ -32,23 +32,23 @@ Answer short response questions directly in this markdown file. Answer questions
 6. What does the following code log? Why?
       ```javascript
       function func() {
-        var b = 1;
+        var x = 1;
       }
 
       func();
 
-      console.log(b);
+      console.log(x);
       ```
 
 7. What does the following code log? Why?
       ```javascript
       function func() {
-        b = 1;
+        x = 1;
       }
 
       func();
 
-      console.log(b);
+      console.log(x);
       ```
 
 8. What does the following code log? Why?
