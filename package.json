@@ -1,7 +1,7 @@
 {
-  "name": "problem-set-4_0",
+  "name": "problem-set-4_1",
   "version": "1.0.0",
-  "description": "Understanding Objects problem sert",
+  "description": "execution context problem set",
   "main": "exercises.js",
   "scripts": {
     "test": "jest"

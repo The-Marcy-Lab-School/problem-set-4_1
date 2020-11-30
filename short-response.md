@@ -1,10 +1,95 @@
 ### Short Response Section
 Answer short response questions directly in this markdown file. Answer questions in 2 - 3 sentences. Be sure to format your responses appropriately.
 
-**1. What is encapsulation? Why do we use it? How do objects enable it?**
+1. In the browser, what serves as the global object?
 
-**2. How do objects encapsulate state? How do they encapsulate behavior?**
+2. In the Node.js environment, what serves as the global object?
 
-**3. How do we create _private data_ within JavaScript objects? What is the role of _accessor properties_?**
+3. In the browser environment, what does the following log?
+      ```javascript
+      a = 20;
 
-**4. What are factory functions and why are they useful?**
+      console.log(window.a);
+      ```      
+
+##### All following code snippets should be run in the browser environemnt: 
+
+4. What does the following code log? Why?
+      ```javascript
+      var b = 100;
+
+      console.log(window.b);
+      ```
+5. What does the following code log? Why?
+      ```javascript
+      let c = 9;
+      const d = 11;
+
+      console.log(window.c);
+      console.log(window.d);
+      ```
+
+6. What does the following code log? Why?
+      ```javascript
+      function func() {
+        var b = 1;
+      }
+
+      func();
+
+      console.log(b);
+      ```
+
+7. What does the following code log? Why?
+      ```javascript
+      function func() {
+        b = 1;
+      }
+
+      func();
+
+      console.log(b);
+      ```
+
+8. What does the following code log? Why?
+      ```javascript
+      function func() {
+        return this;
+      }
+
+      let context = func();
+
+      console.log(context);
+      ```
+
+9. What will the code below output? Explain the difference, if any, between this output and that of problem 8.
+      ```javascript
+      const obj = {
+        func: function() {
+          return this;
+        },
+      };
+
+      let context = obj.func();
+
+      console.log(context);
+      ```
+
+10. What will the following code produce? Why? 
+      ```javascript
+      var a = 10;
+      var b = 10;
+      var c = {
+        a: -10,
+        b: -10,
+      };
+
+      function add() {
+        return this.a + b;
+      }
+
+      c.add = add;
+
+      console.log(add());
+      console.log(c.add());
+      ```
