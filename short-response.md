@@ -7,7 +7,7 @@ Answer short response questions directly in this markdown file. Answer questions
 
 3. In the browser environment, what does the following log?
       ```javascript
-      a = 20;
+      a = 10;
 
       console.log(window.a);
       ```      
