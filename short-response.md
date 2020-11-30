@@ -77,19 +77,19 @@ Answer short response questions directly in this markdown file. Answer questions
 
 10. What will the following code produce? Why? 
       ```javascript
-      var a = 10;
-      var b = 10;
-      var c = {
-        a: -10,
-        b: -10,
+      var x = 10;
+      var y = 10;
+      var z = {
+        x: -10,
+        y: -10,
       };
 
       function add() {
-        return this.a + b;
+        return this.x + y;
       }
 
-      c.add = add;
+      z.add = add;
 
       console.log(add());
-      console.log(c.add());
+      console.log(z.add());
       ```
