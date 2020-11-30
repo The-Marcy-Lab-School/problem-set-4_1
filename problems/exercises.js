@@ -1,5 +1,18 @@
+// // Update the starter code of this file 
+
+// const cellphone = {};
+
+// // Question 11
+// const makeCellPhone = function() {
+
+// }
+// module.exports = {
+//   cellphone,
+//   makeCellPhone,
+// };
+
 const cellphone = {
-  phoneNumber: '01234567890',
+phoneNumber: '01234567890',
 }
 
 cellphone.model = 'iPhone 2';
@@ -12,8 +25,8 @@ cellphone.contacts.push({name: 'peter', phoneNumber: '9998887877'});
 
 // Question 5
 cellphone.addContact = function(name, phoneNumber) {
-  this.contacts.push({name: name, phoneNumber: phoneNumber});
-  return `${name} successfully added.`;
+this.contacts.push({name: name, phoneNumber: phoneNumber});
+return `${name} successfully added.`;
 }
 
 // Question 6
@@ -29,7 +42,7 @@ function numberOfContacts() {
 cellphone.numberOfContacts = numberOfContacts;
 
 // Question 8
-cellphone.lookup = function(name) {
+cellphone.lookUp = function(name) {
     let result = this.contacts.find((contact) => contact.name === name);
     return result ? result.phoneNumber : "Contact not found."; 
 }
@@ -50,7 +63,7 @@ cellphone.call = function(str) {
         return contact.name === str || contact.phoneNumber === str;
     });
     if (contact) {
-        return `Calling ${contact.name} at ${contact.number}`;
+        return `Calling ${contact.name} at ${contact.phoneNumber}`;
     } else {
         return "Contact not found."
     }
@@ -62,19 +75,15 @@ const makeCellPhone = function(phoneNumber, model) {
         phoneNumber: phoneNumber,
         model: model,
         contacts: [],
-        addContact: function(name, phoneNumber) {
-          this.contacts.push({name: name, phoneNumber: phoneNumber});
-          return `${name} successfully added.`;
-        },
-        numberOfContacts: numberOfContacts,
-        lookup: function(name) {
-            let result = this.contacts.find((contact) => contact.name === name);
-            return result ? result.phoneNumber : "Contact not found."; 
-        },
-        
+        addContact: cellphone.addContact,
+        numberOfContacts: cellphone.numberOfContacts,
+        lookUp: cellphone.lookUp,
+        call: cellphone.call,
+        deleteContact: cellphone.deleteContact
     }
 }
-//module.exports = {
-  //cellphone,
-  // makeCellPhone,
-//};
+
+module.exports = {
+cellphone,
+makeCellPhone,
+};
