@@ -14,13 +14,14 @@ Answer short response questions directly in this markdown file. Answer questions
 
 ##### All following code snippets should be run in the browser environemnt: 
 
-4. What does the following code log? Why?
+4. What does the following code log? **Why**?
       ```javascript
       var b = 100;
 
       console.log(window.b);
       ```
-5. What does the following code log? Why?
+      
+5. What does the following code log? **Why**?
       ```javascript
       let c = 9;
       const d = 11;
@@ -40,7 +41,7 @@ Answer short response questions directly in this markdown file. Answer questions
       console.log(x);
       ```
 
-7. What does the following code log? Why?
+7. What does the following code log? Explain the difference, if any, between this output and that of problem 6.
       ```javascript
       function func() {
         x = 1;
@@ -62,7 +63,7 @@ Answer short response questions directly in this markdown file. Answer questions
       console.log(context);
       ```
 
-9. What will the code below output? Explain the difference, if any, between this output and that of problem 8.
+9. What will the following code log? Explain the difference, if any, between this output and that of problem 8.
       ```javascript
       const obj = {
         func: function() {
@@ -75,7 +76,7 @@ Answer short response questions directly in this markdown file. Answer questions
       console.log(context);
       ```
 
-10. What will the following code produce? Why? 
+10. What will the following code produce? **Why**? 
       ```javascript
       var x = 10;
       var y = 10;
