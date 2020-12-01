@@ -1,7 +1,7 @@
 # Problem Set 4-1
 ## Coding Challenge
 
-1. Create a function factory called , `makeFriendList`, which returns an object that mutates a private array. 
+1. Create a function factory called , `makeFriendList()`, which returns an object that mutates a private array. 
 
 The object should have a private data property `_friends` which should be initialized to an empty array.
 
