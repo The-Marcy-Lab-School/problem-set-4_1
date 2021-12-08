@@ -22,7 +22,7 @@ The object should have three methods - `addFriend()`, `removeFriend()`, `display
 
 Here's an example of method calls and what they would return:
 ```js
-  const mayasFriends = solutions.makeFriendList(); // create a new object with a property of an empty array
+  const mayasFriends = makeFriendList(); // create a new object with a property of an empty array
   
   mayasFriends.displayFriends()        // 'You have not added any friends.'
 
