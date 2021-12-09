@@ -5,7 +5,7 @@ test('Question 1: has a private data properties of friends', () => {
   expect(reubsFriends._friends).toEqual([]);
 });
 
-test('Question 1: addFriends works', () => {
+test('Question 2: addFriends works', () => {
   const reubsFriends = solutions.makeFriendList();
   expect(reubsFriends.addFriend('Maya')).toBe('Maya successfully added.');
   expect(reubsFriends._friends).toEqual(['Maya']);
@@ -13,7 +13,7 @@ test('Question 1: addFriends works', () => {
   expect(reubsFriends._friends).toEqual(['Maya', 'Juan Pablo']);
 });
 
-test('Question 1: removeFriends works', () => {
+test('Question 3: removeFriends works', () => {
   const mayasFriends = solutions.makeFriendList();
   expect(mayasFriends.addFriend('Reuben')).toBe('Reuben successfully added.');
   expect(mayasFriends.addFriend('Juan Pablo')).toBe('Juan Pablo successfully added.');
@@ -25,7 +25,7 @@ test('Question 1: removeFriends works', () => {
   expect(mayasFriends.removeFriend('Ann')).toBe('Ann not found.');
 });
 
-test('Question 1: displayFriends works', () => {
+test('Question 4: displayFriends works', () => {
   const annsFriends = solutions.makeFriendList();
   expect(annsFriends.displayFriends()).toEqual('You have not added any friends.');
   expect(annsFriends.addFriend('Maya')).toBe('Maya successfully added.');
