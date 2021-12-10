@@ -5,7 +5,7 @@ Answer short response questions directly in this markdown file. Answer questions
 
 2. In the Node.js environment, what serves as the global object?
 
-3. In the browser environment, what does the following log?
+3. In the browser environment, what does the following log? **Why?**
       ```javascript
       a = 10;
 
