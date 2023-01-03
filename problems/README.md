@@ -1,9 +1,11 @@
 # Problem Set 4-1
 ## Coding Challenge
 
-1. Create a function factory called , `makeFriendList()`, which returns an object that mutates a private array. 
+1. Create a function factory called , `makeFriendList()`, which returns an object that mutates an array. 
 
-The object should have a private data property `_friends` which should be initialized to an empty array.
+The object should have a "private" data property `_friends` which should be initialized to an empty array.
+
+> Note: It won't actually be private (we're not using closures) but we indicate that it should be treated as private by adding the `_` to the front of the name.
 
 The object should have three methods - `addFriend()`, `removeFriend()`, `displayFriends`.
   * `addFriend()` takes a name (string) argument and adds that argument to the private array. `addFriend()` should return `"<<friend>> successfully added."`. 
